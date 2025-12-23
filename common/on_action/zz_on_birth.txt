@@ -1,0 +1,19 @@
+﻿on_birth_child = {
+	on_actions = {
+			keybee_on_birth
+		}
+}
+
+keybee_on_birth = {
+	trigger = {
+		exists = scope:child
+	}
+	effect = {
+		add_diplomacy_skill = { 0 10 }
+		add_stewardship_skill = { 0 10 }
+		add_martial_skill = { 0 10 }
+		add_intrigue_skill = { 0 10 }
+		add_learning_skill = { 0 10 }
+		add_prowess_skill = { 0 5 }
+	}
+}
